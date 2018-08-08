@@ -1,0 +1,18 @@
+types: ./types.graphql
+functions: {}
+permissions:
+- operation: Job.read
+- operation: Job.create
+- operation: Job.update
+- operation: Job.delete
+- operation: Professional.read
+- operation: Professional.create
+- operation: Professional.update
+- operation: Professional.delete
+- operation: PriceOffer.read
+- operation: PriceOffer.create
+- operation: PriceOffer.update
+- operation: PriceOffer.delete
+- operation: PriceOfferJob.connect
+- operation: PriceOfferProfessional.connect
+rootTokens: []

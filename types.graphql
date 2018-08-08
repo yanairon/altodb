@@ -1,0 +1,25 @@
+type Job @model {
+  id: ID! @isUnique
+  name: String!
+  offers: [PriceOffer!]! @relation(name: "PriceOfferJob")
+}
+
+type Professional @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  name: String!
+  email: String
+  phone: String
+  website: String
+  offers: [PriceOffer!]! @relation(name: "PriceOfferProfessional")
+}
+
+type PriceOffer @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  price: Int!
+  job: Job! @relation(name: "PriceOfferJob")
+  professional: Professional! @relation(name: "PriceOfferProfessional")
+}

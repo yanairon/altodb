@@ -1,0 +1,3 @@
+targets:
+  default: prod
+  prod: shared-eu-west-1/cjklkweu90jj80107tsvxflpa
