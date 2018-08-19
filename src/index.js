@@ -7,6 +7,10 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+const theme = createMuiTheme({
+  direction: "rtl" // Both here and <body dir="rtl">
+});
 
 const httpLink = new HttpLink({
   uri: "https://api.graph.cool/simple/v1/cjklkweu90jj80107tsvxflpa"
@@ -18,9 +22,11 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
-    <ApolloProvider client={client}>
+  <ApolloProvider client={client}>
+    <MuiThemeProvider theme={theme}>
       <App />
-    </ApolloProvider>,
+    </MuiThemeProvider>
+  </ApolloProvider>,
   document.getElementById("root")
 );
 registerServiceWorker();

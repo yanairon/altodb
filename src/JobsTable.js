@@ -7,6 +7,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import strings from "./strings";
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -43,7 +44,7 @@ function JobsTable(props) {
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
-            <CustomTableCell> Name </CustomTableCell>
+            <CustomTableCell> {strings.name} </CustomTableCell>
           </TableRow>
         </TableHead>
         <TableBody>

@@ -7,6 +7,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import strings from "./strings";
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -39,34 +40,34 @@ function PricesTable(props) {
   const { classes } = props;
 
   return (
-      <Paper className={classes.root}>
-        <Table className={classes.table}>
-          <TableHead>
-            <TableRow>
-              <CustomTableCell> Job </CustomTableCell>
-              <CustomTableCell> Professional </CustomTableCell>
-              <CustomTableCell> Price </CustomTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {props.prices.map(price => {
-              return (
-                <TableRow key={price.id}>
-                  <CustomTableCell component="th" scope="row">
-                    {price.job.name}
-                  </CustomTableCell>
-                  <CustomTableCell component="th" scope="row">
-                    {price.professional.name}
-                  </CustomTableCell>
-                  <CustomTableCell component="th" scope="row">
-                    {price.price}
-                  </CustomTableCell>
-                </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
-      </Paper>
+    <Paper className={classes.root}>
+      <Table className={classes.table}>
+        <TableHead>
+          <TableRow>
+            <CustomTableCell> {strings.job} </CustomTableCell>
+            <CustomTableCell> {strings.prof} </CustomTableCell>
+            <CustomTableCell> {strings.price} </CustomTableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {props.prices.map(price => {
+            return (
+              <TableRow key={price.id}>
+                <CustomTableCell component="th" scope="row">
+                  {price.job.name}
+                </CustomTableCell>
+                <CustomTableCell component="th" scope="row">
+                  {price.professional.name}
+                </CustomTableCell>
+                <CustomTableCell component="th" scope="row">
+                  {price.price}
+                </CustomTableCell>
+              </TableRow>
+            );
+          })}
+        </TableBody>
+      </Table>
+    </Paper>
   );
 }
 

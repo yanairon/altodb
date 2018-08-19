@@ -43,7 +43,7 @@ class App extends Component {
     strings.setLanguage("he");
     const { navigation } = this.state;
     return (
-      < div    className = "App" >
+      <div className="App" direction="rtl">
         <header className="App-header">
           <img
             src="https://lh3.googleusercontent.com/SqVKYoAKtBHVE_8dF_342OON6h5wHVXywXcRqT6igRyIeGRysjxPWwSVyCztnu6GJ6Eu7Q_VlYJdoWDG"
