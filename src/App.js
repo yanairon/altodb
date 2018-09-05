@@ -123,6 +123,7 @@ const ALL_PRICES_QUERY = gql`
         name
       }
       price
+      createdAt
     }
   }
 `;

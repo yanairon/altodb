@@ -12,22 +12,22 @@
     "prettier-package": "prettier-package-json --write ./package.json"
   },
   "dependencies": {
-    "@material-ui/core": "^1.4.3",
-    "@material-ui/icons": "^2.0.1",
-    "apollo-cache-inmemory": "^1.0.0",
-    "apollo-client": "^2.0.1",
-    "apollo-link": "^1.0.0",
-    "apollo-link-http": "^1.1.0",
-    "graphql": "^0.11.7",
-    "graphql-tag": "^2.5.0",
-    "react": "^16.4.2",
-    "react-apollo": "^2.0.0",
-    "react-dom": "^16.4.2",
-    "react-localization": "^1.0.10",
-    "react-scripts": "1.1.4"
+    "@material-ui/core": "3.0.2",
+    "@material-ui/icons": "3.0.1",
+    "apollo-cache-inmemory": "1.2.9",
+    "apollo-client": "2.4.1",
+    "apollo-link": "1.0.0",
+    "apollo-link-http": "1.1.0",
+    "graphql": "14.0.0",
+    "graphql-tag": "2.5.0",
+    "react": "16.4.2",
+    "react-apollo": "2.0.0",
+    "react-dom": "16.4.2",
+    "react-localization": "1.0.10",
+    "react-scripts": "1.1.5"
   },
   "devDependencies": {
-    "prettier-eslint-cli": "^4.4.0",
-    "prettier-package-json": "^1.6.0"
+    "prettier-eslint-cli": "4.4.0",
+    "prettier-package-json": "2.0.0"
   }
 }

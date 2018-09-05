@@ -11,7 +11,8 @@ let strings = new LocalizedStrings({
     name: "Name",
     email: "E-Mail",
     phone: "Phone #",
-    website: "Website"
+    website: "Website",
+    date: "Date"
   },
   he: {
     profs: "בעלי מקצוע",
@@ -23,7 +24,8 @@ let strings = new LocalizedStrings({
     name: "שם",
     email: "מייל",
     phone: "מס' טלפון",
-    website: "אתר"
+    website: "אתר",
+    date: "תאריך"
   }
 });
 
