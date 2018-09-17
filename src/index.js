@@ -8,6 +8,8 @@ import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+const netlifyIdentity = require("netlify-identity-widget");
+netlifyIdentity.init();
 const theme = createMuiTheme({
   direction: "rtl" // Both here and <body dir="rtl">
 });
