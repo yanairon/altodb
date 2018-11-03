@@ -64,9 +64,7 @@ function PricesTable(props) {
                   {price.price}
                 </CustomTableCell>
                 <CustomTableCell component="th" scope="row">
-                  {
-                    new Date(price.createdAt).toLocaleDateString('he-IL')
-                  }
+                  {new Date(price.createdAt).toLocaleDateString("he-IL")}
                 </CustomTableCell>
               </TableRow>
             );
