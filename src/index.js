@@ -10,7 +10,10 @@ import registerServiceWorker from "./registerServiceWorker";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
-  direction: "rtl" // Both here and <body dir="rtl">
+  direction: "rtl", // Both here and <body dir="rtl">
+  typography: {
+    useNextVariants: true
+  }
 });
 
 const httpLink = new HttpLink({

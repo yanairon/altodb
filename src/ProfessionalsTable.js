@@ -60,7 +60,11 @@ function ProfTable(props) {
                 <CustomTableCell> {prof.email} </CustomTableCell>
                 <CustomTableCell> {prof.phone} </CustomTableCell>
                 <CustomTableCell>
-                  <a target="_blank" href={prof.website}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={prof.website}
+                  >
                     {prof.website}
                   </a>
                 </CustomTableCell>

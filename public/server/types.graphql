@@ -1,6 +1,24 @@
+enum Unit {
+  METER
+  UNIT
+  ROOM
+  FIX
+}
+
+enum Currency {
+  NIS
+}
+type Category @model {
+  id: ID! @isUnique
+  name: String!
+  jobs: [Job!]! @relation(name: "JobCategory")
+}
+
 type Job @model {
   id: ID! @isUnique
   name: String!
+  category: Category! @relation(name: "JobCategory")
+  subCategory: String
   offers: [PriceOffer!]! @relation(name: "PriceOfferJob")
 }
 
@@ -20,6 +38,11 @@ type PriceOffer @model {
   id: ID! @isUnique
   updatedAt: DateTime!
   price: Int!
+  currency: Currency!
+  comment: String
+  unit: Unit! 
   job: Job! @relation(name: "PriceOfferJob")
   professional: Professional! @relation(name: "PriceOfferProfessional")
 }
+
+# @migrationValue(value: "val")

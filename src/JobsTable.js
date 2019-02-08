@@ -45,6 +45,8 @@ function JobsTable(props) {
         <TableHead>
           <TableRow>
             <CustomTableCell> {strings.name} </CustomTableCell>
+            <CustomTableCell> {strings.subcategory} </CustomTableCell>
+            <CustomTableCell> {strings.category} </CustomTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -53,6 +55,12 @@ function JobsTable(props) {
               <TableRow key={job.id}>
                 <CustomTableCell component="th" scope="row">
                   {job.name}
+                </CustomTableCell>
+                <CustomTableCell>
+                  {job.subcategory}
+                </CustomTableCell>
+                <CustomTableCell>
+                  {job.category.name}
                 </CustomTableCell>
               </TableRow>
             );

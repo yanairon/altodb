@@ -12,7 +12,11 @@ let strings = new LocalizedStrings({
     email: "E-Mail",
     phone: "Phone #",
     website: "Website",
-    date: "Date"
+    date: "Date",
+    category: "Categroy",
+    subcategory: "Sub-Categroy",
+    comment: "Comment",
+    unit: "Unit"
   },
   he: {
     profs: "בעלי מקצוע",
@@ -25,7 +29,11 @@ let strings = new LocalizedStrings({
     email: "מייל",
     phone: "מס' טלפון",
     website: "אתר",
-    date: "תאריך"
+    date: "תאריך",
+    category: "קטגוריה",
+    subcategory: "תת-קטגוריה",
+    comment: "הערות",
+    unit: "יחידה"
   }
 });
 

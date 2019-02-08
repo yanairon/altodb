@@ -5,6 +5,10 @@ permissions:
 - operation: Job.create
 - operation: Job.update
 - operation: Job.delete
+- operation: Category.read
+- operation: Category.create
+- operation: Category.update
+- operation: Category.delete
 - operation: Professional.read
 - operation: Professional.create
 - operation: Professional.update

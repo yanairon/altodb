@@ -108,6 +108,10 @@ const ALL_JOBS_QUERY = gql`
     allJobs {
       id
       name
+      category {
+        name
+      }
+      subCategory
     }
   }
 `;
@@ -124,6 +128,9 @@ const ALL_PRICES_QUERY = gql`
       }
       price
       createdAt
+      currency
+      unit
+      comment
     }
   }
 `;
