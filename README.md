@@ -1,5 +1,5 @@
 # altodb
-Updated DB of ALTO's professionals and prices 
+Updated DB of ALTO's professionals and prices
 
 # URL
 https://altodb.netlify.com/
@@ -13,4 +13,4 @@ graphcool deploy -t prod
 yarn start
 
 # CD
-When comitting to master branch
+When committing to master branch
